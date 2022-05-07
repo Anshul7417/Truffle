@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Anshul7417/Truffle/issues"
   },
-  "homepage": "https://github.com/Anshul7417/Truffle#readme"
+  "homepage": "https://github.com/Anshul7417/Truffle#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.8"
+  }
 }
