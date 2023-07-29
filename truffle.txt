@@ -1,0 +1,63 @@
+ganache - local blockchain simulator
+used in develop deploy tests
+
+
+truffle-used in compile and deploy.
+
+
+1. truffle init    --   initilaization of project 
+it made three folder contracts  --- used for storing contracts.
+
+migrations---used in deployment
+
+test --- used in testing
+
+
+truffle-config.js  ---- used for configuration
+
+
+write truffle compile to compile all contarcts in the contracts folder and made a build folder where there are json files.
+
+now these json contains abi and bytecode.
+
+DEPLOYMENT--
+now for deployments made custom file by copying all data of the sample file and name change in the migrations folder.
+
+the number in the migration filenames specify the order of deployment now change in config line 47
+
+for deployment-----  truffle migrate (it also compiles)
+
+but now if we channge the file and again type truffle migrate it does not deploy again
+
+for this problem type truffle migrate --reset
+
+Infura is a full node used to connect to ethereum blockchain
+
+when we want to connect with ethereum testnet or mainnet infura comes into play.
+
+copy the link with your api key and cahnge in truffle config.js
+
+mnemonics same as that of metamask and install package(hdwallet)
+
+simply type truffle migrate --network sepolia
+
+etherscan is a website that shows transactions
+
+
+front end integrations
+
+go to truffle suite boxes website
+create a folder and install react by typing truffle unbox react
+
+now all same but build folder ab contract naam se bnega src m
+
+ab metamask se connect krlo easily run kro app ko by npm start and add easily by custom ganache UI
+
+
+if http error then use wss in api
+
+alchemy = infura both are used for connecting our sys to etherum blockchain
+
+for direct connection we have to install geth on our pc high sys requirements
+
+

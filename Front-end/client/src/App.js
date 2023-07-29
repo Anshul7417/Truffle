@@ -39,8 +39,8 @@ class App extends Component {
     const { accounts, contract } = this.state;
 
     // Stores a given value, 5 by default.
-    const user_value = document.getElementById("input").value;
-    await contract.methods.set(user_value).send({ from: accounts[0] });
+    
+    await contract.methods.set(5).send({ from: accounts[0] });
 
     // Get the value from the contract to prove it worked.
     const response = await contract.methods.get().call();
@@ -67,8 +67,6 @@ class App extends Component {
         </p>
         <div>The stored value is: {this.state.storageValue}</div>
         <div>
-          <input type="text" id="input" value="569"></input>
-          <button type="submit" onClick={this.runExample}>Click</button>
         </div>
       </div>
     );
